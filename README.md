@@ -44,10 +44,10 @@ For example:
 
 Replace these `.env` variables
 
-#### VITE_API_URL
-#### VITE_API_BASE_URL
-#### BASE_IMAGE_API
-#### VITE_PORT
+#### VITE_API_URL              (Where app is running eg. localhost)
+#### VITE_API_BASE_URL         (To GET the records)
+#### BASE_IMAGE_API            (To GET Pokemon images)
+#### VITE_PORT                 (Port on which our app is running)
 
 Vite also supports path aliases for easier module resolution. You can configure path aliases in the tsconfig.json or vite.config.js file.
 
