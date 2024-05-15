@@ -1,30 +1,62 @@
-# React + TypeScript + Vite
+# Pokemon App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+The Pokemon App is a React application that allows users to retrieve a list of Pokemon from the PokeAPI and view details of each Pokemon. The application is built using TypeScript, Redux Toolkit, and RTK Query for state management, and Vite for development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Setup
 
-## Expanding the ESLint configuration
+**Clone the Repository:**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+`git clone https://github.com/musmanilyas/Pokemon.git`
 
-- Configure the top-level `parserOptions` property like this:
+Install Dependencies:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+`npm install`
+
+## Start the Development Server:
+
+`npm run dev`
+
+This will start the Vite development server. You can view the app at http://localhost:5174 in your browser.
+
+## Packages Used
+
+**React:** JavaScript library for building user interfaces.
+
+**Redux Toolkit:** Toolkit for efficient Redux development.
+
+**RTK Query:** Data fetching and caching library built on top of Redux Toolkit.
+
+**Vite:** Next-generation frontend tooling for building React apps.
+
+Vite Instead of Create React App
+
+This project uses Vite as the build tool instead of Create React App for faster development and better performance. Vite provides a blazing-fast development server with instant hot module replacement (HMR) and optimized production builds.
+
+## Vite URL Handling
+
+Vite automatically handles URL resolution for module imports. You can import modules using relative paths or package names, and Vite will resolve them correctly.
+
+For example:
+
+Replace these `.env` variables
+
+#### VITE_API_URL
+#### VITE_API_BASE_URL
+#### BASE_IMAGE_API
+#### VITE_PORT
+
+Vite also supports path aliases for easier module resolution. You can configure path aliases in the tsconfig.json or vite.config.js file.
+
+## Testing
+
+Tests are written using Vite's testing utilities (vitest). Vite provides a simple and fast testing setup with its built-in testing solution.
+
+To run tests, use the following command:
+
+`npm run test`
+
+This will execute all tests in our project and display the results in the console.
