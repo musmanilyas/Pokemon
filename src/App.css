@@ -1,0 +1,9 @@
+.main {
+  display: flex;
+}
+.pokemon-list {
+  flex: 1;
+}
+.pokemon-details {
+  flex: 3;
+}

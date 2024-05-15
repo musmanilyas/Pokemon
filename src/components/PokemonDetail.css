@@ -1,0 +1,29 @@
+.detail-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-content img {
+  width: 250px;
+  height: 250px;
+}
+
+.detail-content table {
+  margin-top: 20px;
+}
+
+.detail-content td,
+.detail-content th {
+  border-top: 1px solid #ddd;
+
+  padding: 8px;
+}
+
+.detail-content th {
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+.heading-font {
+  font-weight: bold;
+}

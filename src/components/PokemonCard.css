@@ -1,0 +1,19 @@
+.pokemon-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pokemon-card {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.pokemon-card img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
